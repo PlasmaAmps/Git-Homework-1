@@ -12,4 +12,7 @@ function writeDate() {
     dateEl.textContent = formatter.format(today);
 }
 
-writeDate()
+writeDate();
+
+var refreshEl = document.getElementById('refreshBtn');
+refreshEl.addEventListener('click', writeDate);
